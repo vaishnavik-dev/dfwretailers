@@ -87,3 +87,30 @@
 .events-updates .button { flex-shrink: 0; text-align: center; }
 @media (max-width: 1100px) { .events-list { margin-left: 35px; margin-right: 35px; } }
 @media (max-width: 760px) { .events-list { margin: 28px 24px; } .meeting-card { grid-template-columns: 1fr; } .meeting-date { flex-direction: row; gap: 20px; padding: 20px; } .meeting-date strong { font-size: 48px; letter-spacing: -2px; } .meeting-content { padding: 28px 24px; } .meeting-details { flex-direction: column; gap: 22px; } .contact-banner > .button { width: 100%; font-size: 17px; } .events-updates .button { width: 100%; } }
+
+/* 12 pt equals 16 CSS pixels: keep supporting copy readable on every page. */
+.eyebrow, .hero-note, .region-strip > span, .region-strip p,
+.intro p:not(.eyebrow), .section-heading > span,
+.explore-card p, .card-number, .card-link,
+.footer-top p, .footer-top > span, .footer-bottom,
+.values p, .values > div > span, .directory-heading span,
+.empty-state p:not(.eyebrow), .retailer-card p,
+.membership-layout > div > p, .steps p, .steps li > span,
+.qr-panel > p:not(.eyebrow), .event-empty > p:not(.eyebrow),
+.contact-details a, .contact-details a span,
+.meeting-date span, .meeting-details dt, .meeting-details dd,
+.breakfast-badge, .events-updates > div > p:last-child,
+.text-link { font-size: 1rem; line-height: 1.65; }
+.eyebrow, .card-number, .region-strip > span,
+.contact-details a span, .meeting-details dt { letter-spacing: 1px; }
+.lead { font-size: 1.125rem; line-height: 1.8; }
+.region-strip, .footer-top, .footer-bottom, .section-heading { flex-wrap: wrap; }
+.explore-card p { min-height: 80px; }
+.card-link { gap: 12px; }
+.card-link > span { flex-shrink: 0; }
+.footer-bottom nav { flex-wrap: wrap; gap: 12px 24px; }
+@media (max-width: 760px) {
+  .lead { font-size: 1.125rem; }
+  .explore-card p { min-height: 0; }
+  .actions { align-items: flex-start; }
+}
