@@ -68,3 +68,22 @@
 @media (min-width: 761px) and (max-width: 1100px) { .navigation { gap: 14px; } .brand-name { font-size: 17px; } .brand { gap: 10px; } .brand img { width: 60px; height: 60px; } }
 @media (max-width: 760px) { .brand-name { font-size: 18px; } .brand { gap: 10px; } .community-intro { grid-template-columns: 1fr; gap: 28px; } .contact-details { flex-direction: column; gap: 18px; } .contact-banner { align-items: flex-start; } }
 @media (max-width: 360px) { .brand-name { font-size: 15px; } .brand img { width: 44px; height: 44px; } }
+
+.contact-banner > .button { padding: 21px 34px; min-height: 68px; font-size: 18px; }
+.events-list { max-width: 1200px; margin: 40px auto; }
+.meeting-card { display: grid; grid-template-columns: 180px 1fr; overflow: hidden; border: 1px solid #dce6f6; border-radius: 16px; background: #f3f7ff; }
+.meeting-date { background: #123a83; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 35px 24px; }
+.meeting-date span { font-size: 12px; letter-spacing: 2px; font-weight: 600; }
+.meeting-date strong { font-family: Manrope, Arial, sans-serif; font-size: 82px; line-height: 1.3; letter-spacing: -4px; color: var(--yellow); }
+.meeting-content { padding: 40px; }
+.meeting-content h2 { margin: 14px 0 16px; }
+.meeting-content > p:not(.eyebrow) { max-width: 650px; }
+.meeting-details { display: flex; flex-wrap: wrap; gap: 28px 60px; margin: 28px 0; }
+.meeting-details dt { color: var(--blue); font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+.meeting-details dd { margin: 0; font-size: 15px; }
+.meeting-details a:hover { text-decoration: underline; }
+.breakfast-badge { display: inline-flex; background: #fff0b4; color: #473707; padding: 7px 15px; border-radius: 30px; font-size: 12px; font-weight: 600; }
+.events-updates > div > p:last-child { color: #dee8fc; font-size: 14px; margin-top: 12px; }
+.events-updates .button { flex-shrink: 0; text-align: center; }
+@media (max-width: 1100px) { .events-list { margin-left: 35px; margin-right: 35px; } }
+@media (max-width: 760px) { .events-list { margin: 28px 24px; } .meeting-card { grid-template-columns: 1fr; } .meeting-date { flex-direction: row; gap: 20px; padding: 20px; } .meeting-date strong { font-size: 48px; letter-spacing: -2px; } .meeting-content { padding: 28px 24px; } .meeting-details { flex-direction: column; gap: 22px; } .contact-banner > .button { width: 100%; font-size: 17px; } .events-updates .button { width: 100%; } }
